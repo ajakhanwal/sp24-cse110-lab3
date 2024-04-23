@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-https://ajakhanwal.github.io/Lab2_Starter/
+(https://ajakhanwal.github.io/sp24-cse110-lab3/)
