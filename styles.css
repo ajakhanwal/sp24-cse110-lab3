@@ -5,11 +5,9 @@ body{
 }
 
 header {
-    background-color: #333; /* applying background color to header */
+    background-color: #333; 
 }
 
-/* Unit */
-/* Relative Units */
 h1 {
     font-size: 2em; /* em unit */
 }
@@ -23,12 +21,9 @@ nav {
     padding: 2rem; /* rem unit */
 }
 main {
-    margin: 20px; /* px unit */
+    margin: 20px;
 }
 
-/* Box Model */
-/* Margin */
-/* Longhand */
 h2 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -37,13 +32,10 @@ h2 {
 }
 /* Shorthand */
 ul {
-    margin: 0px 10px 10px 10px; /* Center aligning ul */
+    margin: 0px 10px 10px 10px;
     text-align:center;
     display: inline-block;
 }
-
-
-/* Padding */
 /* Longhand */
 section {
     padding-top: 20px;
@@ -53,11 +45,9 @@ section {
 }
 /* Shorthand */
 li {
-    padding: 5px 10px; /* padding on list items */
+    padding: 5px 10px 0px 0px; 
 }
 
-/* Borders */
-/* applying border */
 section {
     border-style: solid;
     border-color: #000;
@@ -65,26 +55,19 @@ section {
     border-radius: 5px;
 }
 
-
-/* Text */
-/* styling text */
 a {
-    text-decoration: none; /* removing underline from links */
-    color: hsl(100,150,200);
+    text-decoration: none; 
+    color: hsl(240,100%,50%);
     text-align:center
 }
 
-/* Display */
-/* experimenting with display property */
 nav {
-    display: inline-block; /* setting display to inline-block */
+    display: inline-block; 
 }
 ul {
-    display: block; /* setting display to block */
+    display: block;
 }
 
-/* Sizing */
-/* setting sizing properties */
 footer {
     height: 100px;
     width: 100%;
@@ -92,132 +75,105 @@ footer {
     min-width: 300px;
 }
 
-/* Position */
-/* element positioning */
 header {
-    position: fixed; /* fixing header position */
+    position: fixed; 
     top: 0;
     left: 0;
 }
 nav {
-    position: relative; /* relative positioning */
+    position: relative; 
+    top: 40px; left: 40px;
 }
 
-/* Pseudo-class */
-/* adding hover effect */
 a:hover {
-    color: purple; /* changing color on hover */
+    color: purple;
 }
 a:active {
-    transform: scale(0.9); /* applying scale transformation on active state */
+    transform: scale(0.9); 
 }
-
-/* Layouts */
 
 /* Flexbox */
 main {
-    display: flex; /* applying flex to the display property */
-    justify-content: space-around; /* justify content */
-    align-items: center; /* align items */
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
     flex-wrap:wrap;
 }
 
 /* Grid */
 main {
-    display: grid; /* applying grid to the display property */
-    grid-template-columns: 1fr 1fr 1fr; /* defining columns */
-    grid-gap: 20px; /* gap between grid items */
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 20px; 
     justify-items: center;
 }
 
-/* Responsiveness */
-/* Media Query */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
+@media screen and (min-width: 30em) and (orientation: landscape) {
     header {
-        font-size: 1.5em; /* adjust header font size */
+        font-size: 1em;
     }
-}
-
-/* Fonts */
-/* Google Fonts */
+    
 body {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font from Google Fonts */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* CSS Selectors */
-
-/* Class Selector */
 .ingredient {
-    color: color(from green srgb r g b / 0.5); /* applying color to .ingredient class */
+    color: color(colorspace 0 0 0); 
     border: 1px solid black;
 }
 
-/* ID Selector */
 #form-section {
-    background-color: color-mix(in srgb, blue 25%, white); /* applying background color to #form-section */
+    background-color: color-mix(in srgb, #34c9eb 0%, white);
 }
 
-/* Universal Selector */
 * {
     margin: 0;
-    padding: 0;
+    padding: 5px;
 }
 
-/* Element Selector */
 h3 {
-    font-style: italic; /* italicize h3 elements */
+    font-style: italic;
 }
 
-/* Attribute Selector */
 input[type="text"] {
-    border: 1px solid #999; /* styling text input fields */
+    border: 1px solid #999;
 }
 
-/* Pseudo-class Selector */
 button:hover {
-    background-color: var(--my-var,yellow); /* changing background color on hover */
+    background-color: var(--my-var,yellow);
 }
 
-/* Selector List */
 h1, h2, h3 {
-    text-align: center; /* center align headings */
+    text-align: center;
 }
 
 /* Combinators */
-/* Descendant Combinator */
 nav ul {
-    list-style-type: none; /* removing bullet points */
+    list-style-type: none; 
 }
 
-/* Child Combinator */
 nav > ul > li {
-    display: inline-block; /* setting display to inline-block for li elements directly under ul */
+    display: inline-block; 
 }
 
-/* General sibling combinator */
 h2 ~ p {
-    font-weight: bold; /* make paragraphs bold following h2 elements */
+    font-weight: bold; 
 }
 
-/* Adjacent sibling combinator */
 h3 + p {
-    color: red; /* color paragraphs red directly following h3 elements */
+    color: red;
 }
 
-/* Combining Two Selectors */
 a.ingredient {
-    font-size: 1.2em; /* increasing font size for links with .ingredient class */
+    font-size: 1.2em;
 }
 
-/* New Selectors (Adopted in December 2023) */
-
-/* :has() Selector */
+/* New Selectors*/
 section:has(ul) {
     background-color: #f9f9f9; /* applying background color to sections with unordered lists */
 }
 
-/* Nested Selectors */
 nav ul li {
-    padding: 10px; /* applying padding to nested list items */
+    padding: 10px;
 }
