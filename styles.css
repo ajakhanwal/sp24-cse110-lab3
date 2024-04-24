@@ -112,10 +112,12 @@ main {
     header {
         font-size: 1em;
     }
+}
     
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 
 /* CSS Selectors */
 .ingredient {
@@ -171,10 +173,9 @@ a.ingredient {
 
 /* New Selectors*/
 section:has(ul) {
-    background-color: #f9f9f9; /* applying background color to sections with unordered lists */
+    background-color: #f9f9f9;
 }
 
 nav ul li {
     padding: 10px;
-}
 }
