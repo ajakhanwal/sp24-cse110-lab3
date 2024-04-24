@@ -167,6 +167,10 @@ h3 + p {
     color: red;
 }
 
+#new-business,
+#miscellaneous {
+    background-color: white;
+}
 a.ingredient {
     font-size: 1.2em;
 }
