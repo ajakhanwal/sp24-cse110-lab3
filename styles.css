@@ -124,7 +124,7 @@ body {
 }
 
 #form-section {
-    background-color: color-mix(in srgb, #34c9eb 0%, white);
+    background-color: color-mix(in srgb, #34c9eb, white);
 }
 
 * {
